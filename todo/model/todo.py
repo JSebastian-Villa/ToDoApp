@@ -1,4 +1,4 @@
-class Todo :
+class Todo:
     def __init__(self, code_id: int, title: str, description: str):
         self.code_id: int = code_id
         self.title: str = title
@@ -16,6 +16,23 @@ class Todo :
 
     def __str__(self) -> str:
         return f"{self.code_id} - {self.title}"
+
+
+class TodoBook:
+    def __init__(self):
+        self.todos = {}
+
+    def add_todo(self, title: str, description: str) -> int:
+        pass
+
+    def pending_todos(self):
+        pass
+
+    def completed_todos(self):
+        pass
+
+    def tags_todo_count(self):
+        pass
 
 
 
